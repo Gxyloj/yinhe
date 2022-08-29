@@ -7,10 +7,10 @@
         :on-change='inputFile'
         :show-file-list='false'
     >
-      <el-button type="primary">Primary</el-button>
+      <el-button type="primary">收款单</el-button>
     </el-upload>
     <el-table :data="tableList"
-              style="width: 50%"
+              style="min-width: 1200px"
               show-summary
               :summary-method="getSummaries"
               stripe
@@ -106,5 +106,8 @@ export default {
 <style scoped lang="scss">
 #home{
   padding: 10px;
+}
+.el-button--primary{
+  margin-bottom: 10px;
 }
 </style>
